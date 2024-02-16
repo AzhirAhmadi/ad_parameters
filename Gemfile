@@ -32,6 +32,10 @@ gem "bootsnap", require: false
 
 gem 'rexml', '~> 3.2', '>= 3.2.5'
 
+gem 'protobuf'
+gem 'google-protobuf'
+
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
