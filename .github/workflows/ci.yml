@@ -24,9 +24,6 @@ jobs:
 
       - name: Run RSpec tests
         run: bundle exec rspec
-        env:
-          RAILS_ENV: test
-          DATABASE_URL: postgres://postgres:password@localhost:5432/simple_mailer_test
 
       - name: Run RuboCop
         run: bundle exec rubocop
