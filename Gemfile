@@ -34,8 +34,13 @@ gem 'bootsnap', require: false
 
 gem 'rexml', '~> 3.2', '>= 3.2.5'
 
-gem 'google-protobuf'
 gem 'protobuf'
+gem 'google-protobuf'
+
+# Dry-rb gems
+gem 'dry-initializer', '~> 3.1.0', '>= 3.1.1'
+gem 'dry-monads', '~> 1.5'
+gem 'dry-types', '~> 1.5', '>= 1.5.1'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -44,8 +49,15 @@ gem 'protobuf'
 # gem "rack-cors"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i(mri mingw x64_mingw)
+  gem 'pry', '~> 0.14', '>= 0.14.1'
+
+  gem 'factory_bot_rails', '~> 6.2', '>= 6.2.0', require: false
+  gem 'faker'
+  gem 'rspec-rails', '~> 6.0.0'
+  gem 'rswag-specs'
+  gem 'shoulda-matchers', '~> 5.2', require: false
+
+  gem 'by'
 
   gem 'rubocop', '~> 1.50.1'
   gem 'rubocop-performance', '~> 1.15'
