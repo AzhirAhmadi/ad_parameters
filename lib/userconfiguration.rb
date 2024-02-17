@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# encoding: utf-8
 
 ##
 # This file is auto-generated. DO NOT EDIT!
@@ -16,6 +16,7 @@ module FYBER
     class CreativeSeq < ::Protobuf::Message; end
     class Placement < ::Protobuf::Message; end
     class PlacementSeq < ::Protobuf::Message; end
+
 
     ##
     # Message Fields
@@ -37,5 +38,8 @@ module FYBER
     class PlacementSeq
       repeated ::FYBER::Userconfiguration::Placement, :placement, 1
     end
+
   end
+
 end
+
