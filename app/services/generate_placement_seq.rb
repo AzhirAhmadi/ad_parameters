@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ext/string'
+require 'extensions/string'
 require 'userconfiguration'
 
 class GeneratePlacementSeq < ApplicationService
