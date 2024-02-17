@@ -35,6 +35,7 @@ gem 'bootsnap', require: false
 gem 'rexml', '~> 3.2', '>= 3.2.5'
 
 gem 'protobuf'
+
 gem 'google-protobuf'
 
 # Dry-rb gems

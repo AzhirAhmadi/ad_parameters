@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class String
   def to_euro_from(from_currency)
     return to_f if from_currency == 'EUR'

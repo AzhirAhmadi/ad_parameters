@@ -1,4 +1,4 @@
-# encoding: utf-8
+# frozen_string_literal: true
 
 ##
 # This file is auto-generated. DO NOT EDIT!
@@ -15,7 +15,6 @@ module Userconfiguration
   class CreativeSeq < ::Protobuf::Message; end
   class Placement < ::Protobuf::Message; end
   class PlacementSeq < ::Protobuf::Message; end
-
 
   ##
   # Message Fields
@@ -37,6 +36,4 @@ module Userconfiguration
   class PlacementSeq
     repeated ::Userconfiguration::Placement, :placement, 1
   end
-
 end
-
