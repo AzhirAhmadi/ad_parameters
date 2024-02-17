@@ -5,6 +5,7 @@
 #
 require 'protobuf'
 
+# rubocop:disable Lint/UnexpectedBlockArity
 module Userconfiguration
   ::Protobuf::Optionable.inject(self) { ::Google::Protobuf::FileOptions }
 
@@ -37,3 +38,4 @@ module Userconfiguration
     repeated ::Userconfiguration::Placement, :placement, 1
   end
 end
+# rubocop:enable Lint/UnexpectedBlockArity
