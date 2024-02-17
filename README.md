@@ -1,24 +1,53 @@
-# README
+This is a project to practice using google proto buffer serialize/deserializing.
+We have some information about `Creatives` and `Placements` in a xml file which is provided by other services.
+This xml file is out main input and we have to return list of placements and their suitable creatives in protobuf
+structure(simply it is a compacted string of values). How we decide if a creative is suitable for a place:
+```
+    if creative.price >= placement.floor
+        is it suitable
+    else
+        it is not
+    end
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: ruby-3.1.3
 
-Things you may want to cover:
+System dependencies:
 
-* Ruby version
+- you have to install `protoc` on your machine:
+    
+    - Link to read more: https://grpc.io/docs/protoc-installation/
+        
+    - Run: `sudo apt install -y protobuf-compiler`
 
-* System dependencies
+    - Test: `protoc --version`
 
-* Configuration
+    - Expected output: `libprotoc x.x.x` (my version was `libprotoc 3.0.0`)
 
-* Database creation
 
-* Database initialization
+Configuration:
+    
+    run `bundle install`
 
-* How to run the test suite
+Database creation:
+- No database yet
 
-* Services (job queues, cache servers, search engines, etc.)
+Database initialization:
+- No database yet
 
-* Deployment instructions
+How to run the test suite:
+- Run: `rspec spec/`
 
-* ...
+Services (job queues, cache servers, search engines, etc.):
+- Nothing yet.
+
+
+Notes:
+
+- If you added new message to protobuf messages ('userconfiguration.proto' file).
+
+        run `rails protobuf:compile`
+        run `cp ./lib/userconfiguration.pb.rb ./lib/userconfiguration.rb`
+        run `rm ./lib/userconfiguration.pb.rb`
+
+- You can read more here about ruby-protobuf -> https://github.com/ruby-protobuf/protobuf/wiki/Installation
