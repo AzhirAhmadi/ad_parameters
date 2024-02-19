@@ -21,7 +21,7 @@ class BaseGenerator < ApplicationService
   end
 
   def placements
-    @_placement ||= xml_data.value!['Data']['Placements']['Placement'].map(&:symbolize_keys)
+    @_placements ||= xml_data.value!['Data']['Placements']['Placement'].map(&:symbolize_keys)
   end
 
   def creatives_with_euro_price
