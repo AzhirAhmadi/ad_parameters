@@ -51,3 +51,24 @@ Notes:
         run `rm ./lib/userconfiguration.pb.rb`
 
 - You can read more here about ruby-protobuf -> https://github.com/ruby-protobuf/protobuf/wiki/Installation
+
+<br>
+<br>
+<br>
+<br>
+<br>
+For the main task we have 2 services (GeneratePlacementSeq, GeneratePlacement) you can use them in rails consol (run `rails c`).
+
+`GeneratePlacementSeq.call(file_path: file_path)`
+
+`GeneratePlacement.call(file_path: file_path, placement_id: placement_id)`
+
+we have 2 end-points to fetch placement/s:
+
+Get all placements in protobuff
+
+    GET base_url/placements
+
+Get the placement with id :placement_id in protobuff
+
+    GET base_url/placements/:placement_id
